@@ -22,6 +22,7 @@ ui <- fluidPage(
                   accept=c('text/csv', 'text/comma-separated-values,text/plain', '.csv')),
         tags$p("The application expects a file with stories as rows, pushes and pulls as columns, and if a given push/pull was causal in any given story, it's coded as 1 (or otherwise 0). The first column is expected to contain the names of the stories."),
         tags$a(href="https://twitter.com/rjs/status/1196994350414061569", "See an example by Ryan Singer on Twitter here."),
+        tags$a(href="https://github.com/pdwarf/JTBD-Analysis", "View code on GitHub"),
         tags$hr(),
         checkboxInput('header', 'Header', TRUE),
         radioButtons('sep', 'Separator',
